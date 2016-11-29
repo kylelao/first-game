@@ -2,10 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="first.css">
   </head>
   <body>
-    <svg width="100%" viewBox="0 0 800 400">
-    <!-- page content -->
+    <svg width="100%" viewBox="0 0 800 367">
+      <image id="pika" x="250" y="20" width="80" height="80" xlink:href="http://rs434.pbsrc.com/albums/qq69/drpepperswife/Pichu%20Animated%20Gifs/PikachuColoredPichuRun.gif~c200"/>
+
+    <image id="pokeball1" x="20" y="20" width="20" height="20" xlink:href="http://vignette3.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807">
+    <animate id="poke" attributeName="y" from="20" to="355" dur="10s" begin="0s; ball.end" />
+    <animate id="ball" attributeName="y" from="355" to="20" dur="10s" begin="poke.end" />
+    </image>
+
+    <image id="pokeball2" x="500" y="20" width="20" height="20" xlink:href="http://vignette2.wikia.nocookie.net/pokemon/images/f/f1/UltraBallArt.png/revision/latest?cb=20101106022319">
+    <animate id="poke" attributeName="y" from="20" to="355" dur="10s" begin="0s; ball.end" />
+    <animate id="ball" attributeName="y" from="355" to="20" dur="10s" begin="poke.end" />
+    </image>
     </svg>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="first.js"></script>
 </html>
