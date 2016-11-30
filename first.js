@@ -33,21 +33,23 @@ PikaYVal = PikaYVal + 15;
   var foodHeight = 20
   var foodX = Number(document.getElementById("pokeball1").getAttribute("x"))
   var foodY = Number(document.getElementById("pokeball1").getAttribute("y"))
+  var pokeball1 = document.getElementById("pokeball1");
 
   if (PikaXVal > foodX && PikaXVal < foodX + foodWidth && PikaYVal > foodY && PikaYVal < foodY + foodHeight) {
-    foodX = randomNumber(0, 800);
-    foodY = randomNumber(0, 800);
+    var randX = randomNumber(50, 750);
+    pokeball1.setAttribute("x",randX)
     console.log("overlap");
   }
 
   foodX1 = Number(document.getElementById("pokeball2").getAttribute("x"))
   foodY1 = Number(document.getElementById("pokeball2").getAttribute("y"))
+  var pokeball2 = document.getElementById("pokeball2");
 
 
   if (PikaXVal > foodX1 && PikaXVal  < foodX1 + foodWidth && PikaYVal > foodY1 && PikaYVal < foodY1 + foodHeight)
   {
-    foodX1 = randomNumber();
-    foodY1 = randomNumber();
+    randX = randomNumber(50,750);
+    pokeball2.setAttribute("x",randX)
     console.log("overlap");
   }
 })
